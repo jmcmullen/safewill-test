@@ -54,16 +54,8 @@ export default {
   &__results {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
-
-    @include tablet {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    @include desktop {
-      grid-template-columns: repeat(4, 1fr);
-    }
   }
 }
 </style>
